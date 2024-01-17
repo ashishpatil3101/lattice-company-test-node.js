@@ -15,14 +15,14 @@ This is the API for the Laticetest project.
 - **Endpoint:** `/hospitals/detail`
 - **Method:** GET
 - **Description:** Fetch details of partiular hospital.
-- **request params** in query params {hospitalId}
+- **request params**: in query params {hospitalId}
 
 
 ### 2. Register Patient
 - **Endpoint:** `/patients/register-patient`
 - **Method:** POST
 - **Description:** Register a new patient.
-- ***request params* in json body {
+- ***request params**: in json body {
     "email": "ashpatil@gmail.com",
     "phone":"+23456789000",
     "password": "Password1ssds",
@@ -38,13 +38,13 @@ This is the API for the Laticetest project.
 ## How to Run
 1. Install dependencies: `npm install`
 2. Create a `.env` file with necessary environment variables.
-env file varibles 
-PORT=4000
-#mysql env values
-DB_HOST=127.0.0.1 or change according to you if its not same for you
-DB_DATABASE=lattice
-DB_USERNAME=
-DB_PASSWORD=
-DB_PORT=3306 or change according to you if its not same for you
+ -env file varibles 
+ -PORT=4000
+ -#mysql env values
+ -DB_HOST=127.0.0.1 or change according to you if its not same for you
+ -DB_DATABASE=lattice
+ -DB_USERNAME=
+ -DB_PASSWORD=
+ -DB_PORT=3306 or change according to you if its not same for you
 3. Run the application: `npm start`
 
