@@ -10,22 +10,30 @@ This is the API for the Laticetest project.
 - **mysql2:** A MySQL client for Node.js with focus on performance.
 
 ## API Endpoints
-#base url - 
+#base url - localhost:{port}
 ### 1. Fetch Hospital Detail
 - **Endpoint:** `/hospitals/detail`
 - **Method:** GET
-- **Description:** Fetch details of all hospitals.
-- **Controller:** `fectchHospitalDetail` in `hospitalController.js`
+- **Description:** Fetch details of partiular hospital.
+- **request params** in query params {hospitalId}
+
 
 ### 2. Register Patient
 - **Endpoint:** `/patients/register-patient`
 - **Method:** POST
 - **Description:** Register a new patient.
-- **Controller:** `registerPatient` in `patientController.js`
-- **Middleware:** `validatePatient` for validating patient data before registration.
+- ***request params* in json body {
+    "email": "ashpatil@gmail.com",
+    "phone":"+23456789000",
+    "password": "Password1ssds",
+    "address": "vsvsvsvsvsvsvsvsvsvsvsv",
+    "photo_url": "ciusbcsvnc.jpg",
+    "name": "vaibhav"
 
-## Postman/Swagger Link
-[Link to Postman/Swagger Documentation](<https://api.postman.com/collections/26007384-8e69e2be-a9f2-405d-84d9-3eff126ab302?access_key=PMAT-01HMC4QKNYB1BA16HB0XE15S3J>)
+}
+
+## Postman
+[Link to Postman](<https://api.postman.com/collections/26007384-8e69e2be-a9f2-405d-84d9-3eff126ab302?access_key=PMAT-01HMC4QKNYB1BA16HB0XE15S3J>)
 
 ## How to Run
 1. Install dependencies: `npm install`
@@ -40,5 +48,3 @@ DB_PASSWORD=
 DB_PORT=3306 or change according to you if its not same for you
 3. Run the application: `npm start`
 
-## License
-This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
