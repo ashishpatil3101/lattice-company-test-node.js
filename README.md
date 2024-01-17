@@ -8,6 +8,8 @@ This is the API for the Laticetest project.
 - **dotenv:** Loads environment variables from a `.env` file.
 - **express-validator:** A set of Express.js middlewares that wraps validator.js validator and sanitizer functions.
 - **mysql2:** A MySQL client for Node.js with focus on performance.
+- **multer** for file upload .currently uploading on server and storing unique url in mysq.
+- **bcrypt** for password hashing .uses salt to hash the password
 
 ## API Endpoints
 #base url - localhost:{port}
