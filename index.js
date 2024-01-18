@@ -4,6 +4,7 @@ import express from 'express';
 import patientRoute from './routes/patient.js'
 import hospitalRoute from './routes/hospital.js'
 
+
 const prepareAndRunServer = () => {
     const port = process.env.PORT
     const app = express();

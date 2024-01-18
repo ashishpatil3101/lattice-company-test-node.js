@@ -5,7 +5,7 @@ const fectchHospitalDetail = async( req,res)=>{
         
         const {hospitalId} = req.query;
         let numberValue = parseInt(hospitalId);
-        if( typeof numberValue === 'number'){
+        if(hospitalId !== '' &&  typeof numberValue === 'number'){
             const response = await hospitalService.fetchHospitalDetail(req);
             if(response.data){
                 res.status(200).json({message: 'data fetched successfully',error:null,data: response.data})

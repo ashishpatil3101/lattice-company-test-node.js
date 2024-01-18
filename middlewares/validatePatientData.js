@@ -1,4 +1,6 @@
-import { validationResult, body } from 'express-validator';
+// import { validationResult, body,file } from 'express-validator';
+import pkg from 'express-validator';
+const { validationResult, body } = pkg;
 
 // Validation function using express-validator
 const validatePatient = [
@@ -34,6 +36,23 @@ const validatePatient = [
     .isLength({ min: 8, max: 15 }).withMessage('Password must be between 8 and 15 characters')
     .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,15}$/)
     .withMessage('Password must contain one uppercase letter, one lowercase letter, and one number'),
+
+
+
+  // Validate Photo
+  body('photo').custom((value, { req }) => {
+    if (!req.file) {
+      throw new Error('Photo is required');
+    }
+
+    // Check the file type (you can customize the allowed types as needed)
+    const allowedTypes = ['image/jpeg', 'image/png'];
+    if (!allowedTypes.includes(req.file.mimetype)) {
+      throw new Error('Invalid photo type. Allowed types: jpeg, png, gif');
+    }
+
+    return true;
+  }),
 
   // Handle validation errors
   (req, res, next) => {

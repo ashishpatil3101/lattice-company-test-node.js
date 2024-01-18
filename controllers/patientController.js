@@ -3,7 +3,6 @@ import patientService from "../services/patientService.js";
 
 const registerPatient = async(req,res,next)=>{
     try {
-
         const response = await patientService.registerPatient(req);
         if( response.data ){
             res.status(201).json({message: "patient added successfully",error: null,data: response.data} );
