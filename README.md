@@ -6,14 +6,14 @@
 - **dotenv:** Loads environment variables from a `.env` file.
 - **express-validator:** A set of Express.js middlewares that wraps validator.js validator and sanitizer functions.
 - **mysql2:** A MySQL client for Node.js with a focus on performance.
-- **multer:** For file upload. Currently uploading on the server and storing a unique URL in MySQL.
+- **multer:** For file upload. Currently uploading on the server and storing a unique URL in MySQL as it not mentioned on test document
 - **bcrypt:** For password hashing. Uses salt to hash the password.
 
 ## API Endpoints
 # Base URL - localhost:{port}
 
 ### 1. Fetch Hospital Detail
-- **Endpoint:** `/hospitals/detail`
+- **Endpoint:** `/hospital/detail`
 - **Method:** GET
 - **Description:** Fetch details of a particular hospital.
 - **Request Params:** In query params `{hospitalId}`
@@ -24,7 +24,7 @@
 
 
 ### 2. Register Patient
-- **Endpoint:** `/patients/register-patient`
+- **Endpoint:** `/patient/register-patient`
 - **Method:** POST
 - **Description:** Register a new patient.
 - **Request Params:** In form data, include the following:
@@ -56,3 +56,4 @@
      - `DB_PASSWORD=your_mysql_password`
      - `DB_PORT=3306` (or change according to your setup)
 6. Run the application: `npm start`.
+7. test the apis
