@@ -1,7 +1,5 @@
 # Laticetest API
 
-## Description
-This is the API for the Laticetest project.
 
 ## Major Libraries/Frameworks Used
 - **Express.js:** A minimal and flexible Node.js web application framework.
@@ -44,9 +42,10 @@ This is the API for the Laticetest project.
 [Link to Postman Collection](https://api.postman.com/collections/26007384-8e69e2be-a9f2-405d-84d9-3eff126ab302?access_key=PMAT-01HMC4QKNYB1BA16HB0XE15S3J)
 
 ## How to Run
-1. Install dependencies: `npm install`
-2. Execute content from `database/dump_file.sql` in the MySQL database.
-3. Create a `.env` file with necessary environment variables.
+1. clone this project on your local machine
+2. Install dependencies: `npm install`
+3. Execute content from `database/dump_file.sql` in the MySQL database.
+4. Create a `.env` file with necessary environment variables.
    - **ENV File Variables:**
      - `PORT=4000`
    - **MySQL Environment Values:**
@@ -55,4 +54,4 @@ This is the API for the Laticetest project.
      - `DB_USERNAME=your_mysql_username`
      - `DB_PASSWORD=your_mysql_password`
      - `DB_PORT=3306` (or change according to your setup)
-4. Run the application: `npm start`.
+5. Run the application: `npm start`.
