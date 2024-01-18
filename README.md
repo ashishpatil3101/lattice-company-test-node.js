@@ -19,7 +19,10 @@ This is the API for the Laticetest project.
 - **Method:** GET
 - **Description:** Fetch details of a particular hospital.
 - **Request Params:** In query params `{hospitalId}`
-![Example Image](https://drive.google.com/file/d/1EDxkDNbT1D6TQ9uhT4asRf5xvscDUurn/view?usp=sharing)
+- please refere this image for better understanding the url ,params
+![getHospitaldataPostman](https://github.com/ashishpatil3101/lattice-company-test-node.js/assets/43375060/85f90b10-ea9b-4446-a7c3-52198f9f183e)
+
+
 
 
 ### 2. Register Patient
@@ -33,7 +36,9 @@ This is the API for the Laticetest project.
   - `address`: "vsvsvsvsvsvsvsvsvsvsvsv"
   - `name`: "vaibhav"
   - `photo`: (Upload the patient's photo as a file in the form data)
-  ![Alt Text](https://drive.google.com/file/d/1hpTTV8LO3zM3zNsy3EobKSJ4a6Rf_WXD/view?usp=sharing)
+  - please refere this image for better understanding the url ,params
+![registerpatientPostman](https://github.com/ashishpatil3101/lattice-company-test-node.js/assets/43375060/10e0ad0c-107f-4233-bc88-43eb03eb2a90)
+
 
 ## Postman
 [Link to Postman Collection](https://api.postman.com/collections/26007384-8e69e2be-a9f2-405d-84d9-3eff126ab302?access_key=PMAT-01HMC4QKNYB1BA16HB0XE15S3J)
