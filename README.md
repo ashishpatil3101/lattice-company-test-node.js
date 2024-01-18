@@ -19,7 +19,7 @@ This is the API for the Laticetest project.
 - **Method:** GET
 - **Description:** Fetch details of a particular hospital.
 - **Request Params:** In query params `{hospitalId}`
-![Alt Text](https://drive.google.com/file/d/1EDxkDNbT1D6TQ9uhT4asRf5xvscDUurn/view?usp=sharing)
+![Alt Text]https://drive.google.com/file/d/1EDxkDNbT1D6TQ9uhT4asRf5xvscDUurn/view?usp=sharing
 
 ### 2. Register Patient
 - **Endpoint:** `/patients/register-patient`
