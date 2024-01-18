@@ -43,9 +43,10 @@
 
 ## How to Run
 1. clone this project on your local machine
-2. Install dependencies: `npm install`
-3. Execute content from `database/dump_file.sql` in the MySQL database.
-4. Create a `.env` file with necessary environment variables.
+2. after cloned go to newly created folder then type following command
+3. Install dependencies: `npm install`
+4. Execute content from `database/dump_file.sql` in the MySQL database.
+5. Create a `.env` file with necessary environment variables.
    - **ENV File Variables:**
      - `PORT=4000`
    - **MySQL Environment Values:**
@@ -54,4 +55,4 @@
      - `DB_USERNAME=your_mysql_username`
      - `DB_PASSWORD=your_mysql_password`
      - `DB_PORT=3306` (or change according to your setup)
-5. Run the application: `npm start`.
+6. Run the application: `npm start`.
